@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  triage:
+    build: .
+    container_name: it-triage-app
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    command: python src/main.py
+
+  datamgmt:
+    build: .
+    container_name: it-triage-datamgmt
+    volumes:
+      - ./output:/app/output
+      - ./archive:/app/archive
+      - ./logs:/app/logs
+    command: python datamgmt.py
