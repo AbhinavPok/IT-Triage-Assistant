@@ -1,4 +1,10 @@
 __pycache__/
 *.pyc
-.env
 
+output/
+archive/
+logs/
+
+.env
+.env.*
+.vscode/
