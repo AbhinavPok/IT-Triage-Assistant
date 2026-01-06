@@ -174,14 +174,13 @@ The triage tool and the data management job are intentionally separated to mirro
 
 ## Project Structure
 
-src/ # Main IT triage application
-datamgmt.py # Data retention and archival script
-output/ # Runtime ticket data (ignored by git)
-archive/ # Archived data (ignored by git)
-logs/ # Operational and audit logs (ignored by git)
-docs/ # Documentation
-examples/ # Example inputs or workflows
-tests/ # Test files
+src/ # Main IT triage application <br>
+datamgmt.py # Data retention and archival script <br>
+output/ # Runtime ticket data (ignored by git) <br>
+archive/ # Archived data (ignored by git) <br>
+logs/ # Operational and audit logs (ignored by git) <br>
+docs/ # Documentation <br>
+
 
 
 Folders that contain runtime data are intentionally excluded from version control.
@@ -202,5 +201,6 @@ python datamgmt.py
 docker compose build
 docker compose run triage
 docker compose run datamgmt
+
 
 
